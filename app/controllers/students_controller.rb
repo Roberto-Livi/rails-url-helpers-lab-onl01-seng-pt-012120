@@ -12,9 +12,9 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
     
     if @student.active
-      "This student is currently inactive."
+      @student.active = false
     else
-      "This student is currently active."
+      @student.active = true
     end
     
     @student.active
