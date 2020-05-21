@@ -1,13 +1,7 @@
-<% if @student.active  %>
-<% @student.active = false %>
-<% else %>
-<% @student.active = true %>
+
+
+<% if @student.active %>
+ <%     "This student is currently inactive." %>
+  <%  else %>
+   <%   "This student is currently active." %>
 <% end %>
-
-<%= @student.active %>
-
-if @student.active
-      "This student is currently inactive."
-    else
-      "This student is currently active."
-    end
